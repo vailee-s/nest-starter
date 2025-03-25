@@ -22,5 +22,12 @@ package.json
 
 `nest g mo common/configModule --no-spec`
 `nest g mo common/logs --no-spec`
-安装模块
+
+## 安装模块
+
 `pnpm i nest-winston winston winston-daily-rotate-file`
+配置并完成日志模块集成
+
+## 全局模块
+
+`nest g f common/filters/all-exception --flat --no-spec`
