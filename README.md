@@ -31,3 +31,9 @@ package.json
 ## 全局模块
 
 `nest g f common/filters/all-exception --flat --no-spec`
+
+## 接入 swc ，接入jest
+
+`pnpm i @swc/cli @swc/core @swc/jest -D`
+
+`nest start -b swc`

@@ -6,7 +6,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'hello world';
+    return 'Hello World!';
   }
   @Get()
   @Version('1')
