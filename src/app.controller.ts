@@ -1,8 +1,10 @@
+import { InjectRedis } from '@nestjs-modules/ioredis';
+import { Redis } from 'ioredis';
 import { Controller, Get, Version } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  constructor() {}
+  constructor(@InjectRedis() private readonly redis: Redis) {}
 
   @Get()
   getHello(): string {

@@ -37,3 +37,7 @@ package.json
 `pnpm i @swc/cli @swc/core @swc/jest -D`
 
 `nest start -b swc`
+
+## 配置 redis
+
+`pnpm i @nestjs-modules/ioredis ioredis`
