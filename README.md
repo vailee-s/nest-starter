@@ -41,3 +41,14 @@ package.json
 ## 配置 redis
 
 `pnpm i @nestjs-modules/ioredis ioredis`
+
+## 配置邮件服务
+
+` pnpm i @nestjs-modules/mailer nodemailer -D`
+
+### 配置邮件服务的模版引擎
+
+`pnpm i handlebars -D`
+
+- 创建模版 common/mailer/templates/welcome.hbs
+- `nest g mo common/mail --no-spec --flat`
